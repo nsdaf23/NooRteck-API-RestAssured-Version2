@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: Get All Existing Employees API
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.157 s <<< FAILURE! - in Get All Existing Employees API
+Get All Existing Employees API.Verify User able to retrieve ALL existing employees #1  Time elapsed: 1.735 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [103] but found [114],
+	expected [Alexander] but found [Wilfredo],
+	expected [Hunold] but found [Ward],
+	expected [IT_PROG] but found [PU_MAN],
+	expected [590.423.4567] but found [751-331-6716]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.noorteck.qa.steps.Hooks.tearDown(Hooks.java:33)
+
+Get All Existing Employees API.Verify User able to retrieve ALL existing employees #2  Time elapsed: 0.219 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [104] but found [115],
+	expected [Bruce] but found [Alexander],
+	expected [Ernst] but found [Khoo],
+	expected [IT_PROG] but found [PU_CLERK],
+	expected [590.423.4568] but found [515.127.4562]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.noorteck.qa.steps.Hooks.tearDown(Hooks.java:33)
+
+Get All Existing Employees API.Verify User able to retrieve ALL existing employees #3  Time elapsed: 0.247 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [106] but found [119],
+	expected [Valli] but found [Kaitlyn],
+	expected [Pataballa] but found [Hoeger],
+	expected [IT_PROG] but found [PU_CLERK],
+	expected [590.423.4560] but found [349-957-2034]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.noorteck.qa.steps.Hooks.tearDown(Hooks.java:33)
+

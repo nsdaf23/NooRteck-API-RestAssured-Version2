@@ -1,0 +1,379 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-20T21:17:36.073Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify User able to retrieve ALL existing employees",
+        "description": "",
+        "id": "get-all-existing-employees-api;verify-user-able-to-retrieve-all-existing-employees;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [103] but found [114],\n\texpected [Alexander] but found [Wilfredo],\n\texpected [Hunold] but found [Ward],\n\texpected [IT_PROG] but found [PU_MAN],\n\texpected [590.423.4567] but found [751-331-6716]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat com.noorteck.qa.steps.Hooks.tearDown(Hooks.java:33)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 270000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User set \"Employee:GetAllEmp\" \"scrum\" webservice api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee:GetAllEmp\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"scrum\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setUpAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1037000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends GET request",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.makeGETrequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User validates status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateStatusCode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User validates response body field",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateResponseBody(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rows[0].employee_id",
+                  "rows[0].first_name",
+                  "rows[0].last_name",
+                  "rows[0].job_id",
+                  "rows[0].phone_number"
+                ]
+              },
+              {
+                "cells": [
+                  "103",
+                  "Alexander",
+                  "Hunold",
+                  "IT_PROG",
+                  "590.423.4567"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAllExEmps"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-20T21:17:37.710Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify User able to retrieve ALL existing employees",
+        "description": "",
+        "id": "get-all-existing-employees-api;verify-user-able-to-retrieve-all-existing-employees;;3",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [104] but found [115],\n\texpected [Bruce] but found [Alexander],\n\texpected [Ernst] but found [Khoo],\n\texpected [IT_PROG] but found [PU_CLERK],\n\texpected [590.423.4568] but found [515.127.4562]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat com.noorteck.qa.steps.Hooks.tearDown(Hooks.java:33)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User set \"Employee:GetAllEmp\" \"scrum\" webservice api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee:GetAllEmp\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"scrum\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setUpAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends GET request",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.makeGETrequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User validates status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateStatusCode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User validates response body field",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateResponseBody(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rows[1].employee_id",
+                  "rows[1].first_name",
+                  "rows[1].last_name",
+                  "rows[1].job_id",
+                  "rows[1].phone_number"
+                ]
+              },
+              {
+                "cells": [
+                  "104",
+                  "Bruce",
+                  "Ernst",
+                  "IT_PROG",
+                  "590.423.4568"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAllExEmps"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-20T21:17:37.929Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify User able to retrieve ALL existing employees",
+        "description": "",
+        "id": "get-all-existing-employees-api;verify-user-able-to-retrieve-all-existing-employees;;4",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [106] but found [119],\n\texpected [Valli] but found [Kaitlyn],\n\texpected [Pataballa] but found [Hoeger],\n\texpected [IT_PROG] but found [PU_CLERK],\n\texpected [590.423.4560] but found [349-957-2034]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat com.noorteck.qa.steps.Hooks.tearDown(Hooks.java:33)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User set \"Employee:GetAllEmp\" \"scrum\" webservice api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee:GetAllEmp\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"scrum\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setUpAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends GET request",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.makeGETrequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User validates status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateStatusCode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User validates response body field",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateResponseBody(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rows[3].employee_id",
+                  "rows[3].first_name",
+                  "rows[3].last_name",
+                  "rows[3].job_id",
+                  "rows[3].phone_number"
+                ]
+              },
+              {
+                "cells": [
+                  "106",
+                  "Valli",
+                  "Pataballa",
+                  "IT_PROG",
+                  "590.423.4560"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAllExEmps"
+          }
+        ]
+      }
+    ],
+    "name": "Get All Existing Employees API",
+    "description": "",
+    "id": "get-all-existing-employees-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hr/US105-GetAllEmps.feature",
+    "tags": []
+  }
+]
